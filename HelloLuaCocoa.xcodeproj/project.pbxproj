@@ -1,0 +1,326 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FC18D456166F2DEF0043E0DD /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC18D455166F2DEF0043E0DD /* Cocoa.framework */; };
+		FC18D460166F2DEF0043E0DD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FC18D45E166F2DEF0043E0DD /* InfoPlist.strings */; };
+		FC18D462166F2DEF0043E0DD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FC18D461166F2DEF0043E0DD /* main.m */; };
+		FC18D469166F2DEF0043E0DD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FC18D468166F2DEF0043E0DD /* AppDelegate.m */; };
+		FC18D46C166F2DEF0043E0DD /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC18D46A166F2DEF0043E0DD /* MainMenu.xib */; };
+		FC18D478166F2EC90043E0DD /* bootstrap.lua in Resources */ = {isa = PBXBuildFile; fileRef = FC18D477166F2EC90043E0DD /* bootstrap.lua */; };
+		FC18D47A166F33A10043E0DD /* LuaCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC18D479166F33A10043E0DD /* LuaCocoa.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FC18D451166F2DEF0043E0DD /* HelloLuaCocoa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloLuaCocoa.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC18D455166F2DEF0043E0DD /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		FC18D458166F2DEF0043E0DD /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		FC18D459166F2DEF0043E0DD /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		FC18D45A166F2DEF0043E0DD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FC18D45D166F2DEF0043E0DD /* HelloLuaCocoa-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HelloLuaCocoa-Info.plist"; sourceTree = "<group>"; };
+		FC18D45F166F2DEF0043E0DD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FC18D461166F2DEF0043E0DD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FC18D463166F2DEF0043E0DD /* HelloLuaCocoa-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HelloLuaCocoa-Prefix.pch"; sourceTree = "<group>"; };
+		FC18D465166F2DEF0043E0DD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		FC18D467166F2DEF0043E0DD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FC18D468166F2DEF0043E0DD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FC18D46B166F2DEF0043E0DD /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		FC18D477166F2EC90043E0DD /* bootstrap.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = bootstrap.lua; sourceTree = "<group>"; };
+		FC18D479166F33A10043E0DD /* LuaCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = LuaCocoa.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FC18D44E166F2DEF0043E0DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC18D47A166F33A10043E0DD /* LuaCocoa.framework in Frameworks */,
+				FC18D456166F2DEF0043E0DD /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FC18D446166F2DEF0043E0DD = {
+			isa = PBXGroup;
+			children = (
+				FC18D45B166F2DEF0043E0DD /* HelloLuaCocoa */,
+				FC18D454166F2DEF0043E0DD /* Frameworks */,
+				FC18D452166F2DEF0043E0DD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FC18D452166F2DEF0043E0DD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FC18D451166F2DEF0043E0DD /* HelloLuaCocoa.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FC18D454166F2DEF0043E0DD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FC18D479166F33A10043E0DD /* LuaCocoa.framework */,
+				FC18D455166F2DEF0043E0DD /* Cocoa.framework */,
+				FC18D457166F2DEF0043E0DD /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FC18D457166F2DEF0043E0DD /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FC18D458166F2DEF0043E0DD /* AppKit.framework */,
+				FC18D459166F2DEF0043E0DD /* CoreData.framework */,
+				FC18D45A166F2DEF0043E0DD /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		FC18D45B166F2DEF0043E0DD /* HelloLuaCocoa */ = {
+			isa = PBXGroup;
+			children = (
+				FC18D476166F2E9D0043E0DD /* scripts */,
+				FC18D467166F2DEF0043E0DD /* AppDelegate.h */,
+				FC18D468166F2DEF0043E0DD /* AppDelegate.m */,
+				FC18D46A166F2DEF0043E0DD /* MainMenu.xib */,
+				FC18D45C166F2DEF0043E0DD /* Supporting Files */,
+			);
+			path = HelloLuaCocoa;
+			sourceTree = "<group>";
+		};
+		FC18D45C166F2DEF0043E0DD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FC18D45D166F2DEF0043E0DD /* HelloLuaCocoa-Info.plist */,
+				FC18D45E166F2DEF0043E0DD /* InfoPlist.strings */,
+				FC18D461166F2DEF0043E0DD /* main.m */,
+				FC18D463166F2DEF0043E0DD /* HelloLuaCocoa-Prefix.pch */,
+				FC18D464166F2DEF0043E0DD /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FC18D476166F2E9D0043E0DD /* scripts */ = {
+			isa = PBXGroup;
+			children = (
+				FC18D477166F2EC90043E0DD /* bootstrap.lua */,
+			);
+			name = scripts;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FC18D450166F2DEF0043E0DD /* HelloLuaCocoa */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC18D46F166F2DEF0043E0DD /* Build configuration list for PBXNativeTarget "HelloLuaCocoa" */;
+			buildPhases = (
+				FC18D44D166F2DEF0043E0DD /* Sources */,
+				FC18D44E166F2DEF0043E0DD /* Frameworks */,
+				FC18D44F166F2DEF0043E0DD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HelloLuaCocoa;
+			productName = HelloLuaCocoa;
+			productReference = FC18D451166F2DEF0043E0DD /* HelloLuaCocoa.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FC18D448166F2DEF0043E0DD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Timothy Kukulski";
+			};
+			buildConfigurationList = FC18D44B166F2DEF0043E0DD /* Build configuration list for PBXProject "HelloLuaCocoa" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FC18D446166F2DEF0043E0DD;
+			productRefGroup = FC18D452166F2DEF0043E0DD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FC18D450166F2DEF0043E0DD /* HelloLuaCocoa */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FC18D44F166F2DEF0043E0DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC18D460166F2DEF0043E0DD /* InfoPlist.strings in Resources */,
+				FC18D46C166F2DEF0043E0DD /* MainMenu.xib in Resources */,
+				FC18D478166F2EC90043E0DD /* bootstrap.lua in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FC18D44D166F2DEF0043E0DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC18D462166F2DEF0043E0DD /* main.m in Sources */,
+				FC18D469166F2DEF0043E0DD /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FC18D45E166F2DEF0043E0DD /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FC18D45F166F2DEF0043E0DD /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		FC18D464166F2DEF0043E0DD /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FC18D465166F2DEF0043E0DD /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		FC18D46A166F2DEF0043E0DD /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FC18D46B166F2DEF0043E0DD /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FC18D46D166F2DEF0043E0DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks @loader_path/../../..";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		FC18D46E166F2DEF0043E0DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks @loader_path/../../..";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		FC18D470166F2DEF0043E0DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HelloLuaCocoa/HelloLuaCocoa-Prefix.pch";
+				INFOPLIST_FILE = "HelloLuaCocoa/HelloLuaCocoa-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		FC18D471166F2DEF0043E0DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HelloLuaCocoa/HelloLuaCocoa-Prefix.pch";
+				INFOPLIST_FILE = "HelloLuaCocoa/HelloLuaCocoa-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FC18D44B166F2DEF0043E0DD /* Build configuration list for PBXProject "HelloLuaCocoa" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC18D46D166F2DEF0043E0DD /* Debug */,
+				FC18D46E166F2DEF0043E0DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC18D46F166F2DEF0043E0DD /* Build configuration list for PBXNativeTarget "HelloLuaCocoa" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC18D470166F2DEF0043E0DD /* Debug */,
+				FC18D471166F2DEF0043E0DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FC18D448166F2DEF0043E0DD /* Project object */;
+}
